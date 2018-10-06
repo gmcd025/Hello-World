@@ -16,3 +16,32 @@ n
   else puts n
   end
 end
+
+
+#the vowel game
+
+game = "The vowel game. This is my first try."
+
+char = game.split('')
+
+count = 0
+
+char.each do |x|
+  if x == "a"
+  count += 1
+  end
+  if x == "e"
+  count += 1
+  end
+  if x == "i"
+  count += 1
+  end
+  if x == "o"
+  count += 1
+  end
+  if x == "u"
+  count += 1
+  end
+end
+
+puts count
