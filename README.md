@@ -19,8 +19,10 @@ end
 
 
 #the vowel game
+puts "Enter text here: "
 
-game = "The vowel game. This is my first try."
+game = gets.chomp
+
 
 char = game.split('')
 
@@ -45,3 +47,4 @@ char.each do |x|
 end
 
 puts count
+
