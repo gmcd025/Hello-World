@@ -134,3 +134,22 @@ for i in 1..5
   print "Gem"
 end
 =end
+
+
+#Redacted text
+
+puts "Enter text: "
+text = gets.chomp
+text.downcase!
+
+puts "Enter redacted: "
+redacted = gets.chomp
+redacted.downcase!
+
+words = text.split (" ")
+words.each do |x|
+  if x == redacted
+    print "REDACTED "
+  else print x + " "
+  end
+end
