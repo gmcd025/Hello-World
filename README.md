@@ -68,3 +68,18 @@ state = gets.chomp
 state.upcase!
 
 puts "Your name is #{first_name} #{last_name} and you are from #{city}, #{state}."
+
+#Daffy Duck
+
+print "Enter input: "
+user_input = gets.chomp
+user_input.downcase!
+
+if user_input.include? "s"
+  user_input.gsub!(/s/, "th")
+else puts "Nothing to do here!"
+end
+
+user_input.capitalize!
+
+puts user_input
