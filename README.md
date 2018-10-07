@@ -83,3 +83,54 @@ end
 user_input.capitalize!
 
 puts user_input
+
+
+
+#loop practices
+
+i = 0
+
+=begin
+while i < 5
+  i += 1
+  print "Ruby!"
+end
+=end
+
+=begin
+loop do
+  i += 1
+  print "Hello"
+  break if i == 5
+end
+=end
+
+=begin
+b = [1, 2, 3, 4, 5]
+
+b.each do
+  print "Ruby"
+end
+=end
+
+=begin
+g = 0
+until g == 5
+  g += 1
+  print "Bell"
+end
+=end
+
+=begin
+i = "Jello"
+
+5.times do 
+  print i
+end
+=end
+
+=begin
+for i in 1..5
+  print "Gem"
+end
+=end
