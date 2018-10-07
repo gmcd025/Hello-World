@@ -193,3 +193,16 @@ numbers = ["z", "a", "g", "c"]
 
 puts alphabetize(numbers, true)
 puts alphabetize(numbers)
+
+
+#strings to symbols
+
+strings = ["HTML", "CSS", "JavaScript", "Python", "Ruby"]
+
+
+symbols = []
+strings.each do |s|
+  symbols.push(s.to_sym)
+end
+
+print symbols
