@@ -177,3 +177,19 @@ frequencies.reverse!
 frequencies.each do |k,v|
   puts k + " " + v.to_s
 end
+
+
+#alphabetize 
+
+def alphabetize(arr, rev=false)
+  arr.sort!
+  if rev == true
+    arr.reverse!
+  else return arr
+  end
+end
+
+numbers = ["z", "a", "g", "c"]
+
+puts alphabetize(numbers, true)
+puts alphabetize(numbers)
